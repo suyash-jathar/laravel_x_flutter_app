@@ -20,7 +20,7 @@ class AuthController extends Controller
             'password' => 'required|min:6|confirmed'
         ]);
 
-        // create user 
+        // create user
         $user = User::create([
             'name' => $attrs['name'],
             'email' => $attrs['email'],
